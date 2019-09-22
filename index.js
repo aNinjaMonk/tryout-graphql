@@ -1,4 +1,3 @@
-
 var { graphql,buildSchema } = require('graphql');
 
 var schema = buildSchema({
@@ -16,3 +15,5 @@ var root = {
 graphql(schema, '{ hello }', root).then((response) =>  {
   console.log(response);
 });
+
+console.log('hello GraphQL');
